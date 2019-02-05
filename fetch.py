@@ -17,7 +17,7 @@ indicators = {
       'public': 'B14003_031E',
       'private': 'B14003_040E',
     },
-    'calculation': lambda x: (x['public'] + x['private']) / x['total'] * 100,
+    'calculation': lambda x : (x['public'] + x['private']) / x['total'] * 100,
   },
   '5-5-1': {
     'variables': {
