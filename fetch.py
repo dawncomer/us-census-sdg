@@ -27,7 +27,7 @@ defaults = {
 
 # The list of indicators to generate and calculations to perform.
 indicators = {
-  '5.1.1': {
+  '5-1-1': {
     'variables': [
       'B14003_030E', # total female
       'B14003_031E', # female public school
@@ -36,7 +36,7 @@ indicators = {
     # (Public + Private) / Total
     'calculation': lambda row: (row['B14003_031E'] + row['B14003_040E']) / row['B14003_030E'] * 100,
   },
-  '5.5.1': {
+  '5-5-1': {
     'variables': [
       'C24010_041E', # female
       'C24010_005E', # male
@@ -61,4 +61,4 @@ for id in indicators:
 
   df = df.drop(indicators[id]['variables'], axis='columns')
   df = df.round(2)
-  df.to_csv(id + '.csv', index=False)
+  df.to_csv('indicator_' + id + '.csv', index=False)
