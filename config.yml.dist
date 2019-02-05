@@ -1,0 +1,12 @@
+# Copy this file to "config.yml" and edit it as needed.
+
+# Paste your API key below. See https://api.census.gov/data/key_signup.html
+api_key: "paste your API key here"
+
+# Paste the parts for your geography below. The example below is for Los Angeles,
+# California. To find codes for states, counties, or cities, see here and use
+# the drop-down: https://www.census.gov/geo/reference/boundary-changes.html
+# For cities use "place", and for counties use "county".
+geography:
+  state: '06'
+  place: '44000'
