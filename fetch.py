@@ -3,6 +3,8 @@ import yaml
 import os.path
 import sys
 
+# TODO: Convert all of this to OO, with each indicator in a separate file.
+
 # Use these defaults for all indicators.
 defaults = {
   'survey': 'acs5',
