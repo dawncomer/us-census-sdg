@@ -23,13 +23,13 @@ indicators = {
     'calculation': lambda x : (x['public'] + x['private']) / x['total'] * 100,
     'disaggregations': {
       'Age group': {
-        '3 and 4 years': {
-          'variables': {
-            'total': 'B01001_027E', # Not ideal... this is "Under 5 years"
-            'public': 'B14003_032E',
-            'private': 'B14003_041E',
-          },
-        },
+        # suggest removing this age group '3 and 4 years': {
+        # suggest removing this age group   'variables': {
+        # suggest removing this age group    'total': 'B01001_027E', # Not ideal... this is "Under 5 years"
+        # suggest removing this age group    'public': 'B14003_032E',
+        # suggest removing this age group    'private': 'B14003_041E',
+        #  },
+       # },
         '5 to 9 years': {
           'variables': {
             'total': 'B01001_028E',
